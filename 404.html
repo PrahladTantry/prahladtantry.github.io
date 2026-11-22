@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found</title>
+<meta name="robots" content="noindex">
+<script>
+// Anything that used to live under /tulu-transliterator/ now lives at the foundry's address.
+var p = location.pathname;
+if (p.indexOf("/tulu-transliterator") === 0) {
+  location.replace("https://tantrytulufonts.github.io/tulu-transliterator/" + p.replace(/^\/tulu-transliterator\/?/, "") + location.search + location.hash);
+}
+</script>
+<style>body{font:18px/1.6 system-ui,sans-serif;max-width:34em;margin:15vh auto;padding:0 20px;color:#1d1a16;background:#fbf7ef}a{color:#7a4b1e}</style>
+</head>
+<body>
+<h1>Page not found</h1>
+<p>Looking for Tulu fonts and tools? Visit the <a href="https://tantrytulufonts.github.io/">Tantry Tulu Font Foundry</a>.</p>
+</body>
+</html>
